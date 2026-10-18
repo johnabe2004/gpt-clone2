@@ -6,7 +6,7 @@ import MessageList from "./components/MessageList/MessageList";
 import ChatInput from "./components/ChatInput/ChatInput";
 import "./App.css";
 
-const API_BASE_URL = "http://localhost:3777/api";
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL + "/api";
 
 function App() {
   const [conversations, setConversations] = useState([]);
